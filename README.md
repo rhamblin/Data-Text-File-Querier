@@ -40,9 +40,9 @@ The format of file is as follows:
 + *Remove all lines in file that satisfies given criteria:*      
 > FileUtil.deleteLinesWith(path, "AGE", ">=", "50");
 
-Or by doing.
+*Or by doing:*
 
-> FileUtil.deleteLinesWith(path, Arrays.asList(FileUtil.greaterThanOrEqual("AGE","50"));
+    > FileUtil.deleteLinesWith(path, Arrays.asList(FileUtil.greaterThanOrEqual("AGE","50"));
 
 + *Change column of all lines in file that satisfies given criteria to value:*
 Here we will change the name of all entries with age>= 50 to "XXXX":
