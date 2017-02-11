@@ -31,17 +31,17 @@ The format of file is as follows:
  |Change column of all lines in file that satisfies given criteria to value|
 
 #Main Operations:
-..* *Get all lines in file that satisfies given criteria:*
++ *Get all lines in file that satisfies given criteria:*
  >String result = FileUtil.linesWith(path,  
  >       Arrays.asList(FileUtil.greaterThanOrEqual("AGE","15"), 
  >                      FileUtil.equals("NAME", "RIKO"), 
  >                            FileUtil.equals("GENDER", "M")))
       
-..* *Remove all lines in file that satisfies given criteria:*      
++ *Remove all lines in file that satisfies given criteria:*      
 > FileUtil.deleteLinesWith(path, "AGE", ">=", "50");
-*Or by doing:*.
+Or by doing.
 > FileUtil.deleteLinesWith(path, Arrays.asList(FileUtil.greaterThanOrEqual("AGE","50"));
 
-..* **Change column of all lines in file that satisfies given criteria to value:*
++ *Change column of all lines in file that satisfies given criteria to value:*
 Here we will change the name of all entries with age>= 50 to "XXXX":
 >        FileUtil.updateLinesWith(path, "AGE", ">=", "50", "NAME","XXXX");
