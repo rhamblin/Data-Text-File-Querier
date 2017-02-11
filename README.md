@@ -37,10 +37,9 @@ The format of file is as follows:
  >                      FileUtil.equals("NAME", "RIKO"), 
  >                            FileUtil.equals("GENDER", "M")))
       
-+ *Remove all lines in file that satisfies given criteria:*      
-> FileUtil.deleteLinesWith(path, "AGE", ">=", "50");
-
-*Or by doing:*
+ + *Remove all lines in file that satisfies given criteria:*      
+  > FileUtil.deleteLinesWith(path, "AGE", ">=", "50");
+ *Or by doing:*
 
     > FileUtil.deleteLinesWith(path, Arrays.asList(FileUtil.greaterThanOrEqual("AGE","50"));
 
