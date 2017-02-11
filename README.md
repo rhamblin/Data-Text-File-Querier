@@ -30,6 +30,13 @@ The format of file is as follows:
  |Remove all lines in file that satisfies given criteria|
  |Change column of all lines in file that satisfies given criteria to value|
 
+ |Supported Queries|
+ |------|
+ |greaterThan()|
+ |greaterThanOrEqual()|
+ |LessThan()|
+ |LessThanOrEqual()|
+ |Equals()|
 #Main Operations:
 + *Get all lines in file that satisfies given criteria:*
  >String result = FileUtil.linesWith(path,  
