@@ -24,7 +24,7 @@ The format of file is as follows:
 3. Set the coloumn names for the tool (the good thing with doing it this way is that you can dynamically query various files in a logical way simply by switchin the ColumnHeaderSpecifier object):
 >FileUtil.setColumnHeaderSpecifier(c);
        
- 4. You can now interact with the file however you chose using the predicates given of create your own. I will go through the operations
+4. You can now interact with the file however you chose using the predicates given of create your own. I will go through the operations
  
  |Main Operations|
  |------|
@@ -39,8 +39,10 @@ The format of file is as follows:
  |LessThan()|
  |LessThanOrEqual()|
  |Equals()|
+ 
 #Main Operations:
-+ *Get all lines in file that satisfies given criteria:*
+
+   + *Get all lines in file that satisfies given criteria:*
  ..1. If you want to combine queries:
  >String result = FileUtil.linesWith(path,  
  >       Arrays.asList(FileUtil.greaterThanOrEqual("AGE","15"), 
@@ -58,7 +60,7 @@ The format of file is as follows:
 
  >[[24 Riko M],[12 Joe M]]
  
-+ *Remove all lines in file that satisfies given criteria:*      
+   + *Remove all lines in file that satisfies given criteria:*      
   > FileUtil.deleteLinesWith(path, "AGE", ">=", "50");
 
 
